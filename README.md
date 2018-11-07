@@ -7,7 +7,7 @@ To learn more about TDM pre/post publish actions, please visit
 
    * [echo](echo/README.md) - simply echo all parameters, do nothing
    * [download-and-copy](download-and-copy/README.md) - download generated CSV files from TDM and copy to a remote host
-   * [db-log](db-log/README.md) - store information about invocation of pre/post build action in a database table
+   * [db-log](db-log/README.md) - store information about invocations of pre/post build actions in a database table
    
 ## Prerequisites
    1. Docker is installed on your machine.
