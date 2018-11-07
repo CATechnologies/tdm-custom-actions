@@ -1,0 +1,6 @@
+target/docker
+target/maven-archiver
+target/test-classes
+*.iml
+pom.xml
+README.md

@@ -1,0 +1,32 @@
+{
+  "name": "db-log",
+  "version": "1.0.0",
+  "description": "TDM Custom Pre/Post Publish Action - Logs public action activity in an Oracle DB",
+  "main": "db-log.js",
+  "scripts": {
+    "build": "echo \"Build with TSC ...\" && rm -rf dist && tsc",
+    "test": "echo \"Testing with ts-node ...\" && ts-node src/db-log.ts",
+    "start": "echo \"Nothing to start. The script db-action is started by TDM action service via REST. Try 'test' target.\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TDMCustomActions"
+  },
+  "keywords": [
+    "TDM",
+    "Oracle",
+    "Client",
+    "Pre/Post",
+    "Publish"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/oracledb": "^1.11.34",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.3"
+  },
+  "dependencies": {
+    "oracledb": "^3.0.0"
+  }
+}

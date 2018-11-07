@@ -1,0 +1,26 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/target
+
+# IDEs and editors
+**/.idea
+*.iml
+
+# do not store SSH configuration (public/private key, known hosts)
+/download-and-copy/conf/*
+
+#temporary files
+*/tmp/*
+
+#node modules
+*/node_modules/*
+
+#npm
+**/package-lock.json
+
+#dist - compiled files
+*/dist/*
+
+
+

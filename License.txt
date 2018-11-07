@@ -1,0 +1,7 @@
+LICENSE AND DISCLAIMER
+
+Copyright © 2018 CA. All rights reserved.  THESE MATERIALS CONSTITUTE CONFIDENTIAL AND PROPRIETARY INFORMATION BELONGING TO CA AND SHOULD NOT BE DISTRIBUTED TO ANY OTHER PARTY WITHOUT CA’S PRIOR WRITTEN CONSENT.  All authorized reproductions must be marked with this language.
+
+These materials are comprised of sample scripts which illustrate techniques to customize data generation flow via docker image extensions.  Such sample scripts do not constitute licensed products or software under any CA license or services agreement.  You may copy, modify and use these sample scripts solely for in conjunction with your use of CA Test Data Manager.  These scripts have not been tested for every contingency.  CA does not make, and you may not rely on, any promise, express or implied, of reliability, serviceability or function of the sample scripts.
+
+To the extent permitted by applicable law, CA provides these scripts “AS IS” without warranty of any kind, including, without limitation, any implied warranties of merchantability, fitness for a particular purpose, or non-infringement. In no event will CA be liable for any loss or damage, direct or indirect, arising from or related to the use of these scripts, including, without limitation, lost profits, lost investment, business interruption, goodwill or lost data, even if CA is expressly advised in advance of the possibility of such damages.
