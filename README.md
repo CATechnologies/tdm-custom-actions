@@ -3,9 +3,7 @@
 This repository contains sample implementation of pre/post publish actions for CA Test Data Manager (TDM).
 
 To learn more about TDM pre/post publish actions, please visit 
-[TDM online documentation](https://docops.ca.com/ca-test-data-manager/4-7/en/ca-test-data-manager-portal-in-linux/tdm
--rest-actionservice
--container).
+[TDM online documentation](https://docops.ca.com/ca-test-data-manager/4-7/en/ca-test-data-manager-portal-in-linux/tdm-rest-actionservice-container).
 
    * [echo](echo/README.md) - simply echo all parameters, do nothing
    * [download-and-copy](download-and-copy/README.md) - download generated CSV files from TDM and copy to a remote host
