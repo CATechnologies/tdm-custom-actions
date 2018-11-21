@@ -1,3 +1,4 @@
+// Copyright © 2018 CA. All rights reserved.  CA Confidential.  Please see License.txt file for applicable usage rights and restrictions.
 import oracledb = require("oracledb");
 
 console.log("=============");

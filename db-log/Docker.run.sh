@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+# Copyright © 2018 CA. All rights reserved.  CA Confidential.  Please see License.txt file for applicable usage rights and restrictions.
 docker run --rm -it --network tdmweb --hostname db-log --name db-log -e ACTION_SECRET=123 \
  -e dbHost=database \
  -e dbUser=TRAVEL \

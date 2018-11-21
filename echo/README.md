@@ -2,7 +2,7 @@
 This action just echos parameters passed by TDM.
 
 ## TDM Variables
-Optionally, when registering the action in TDM, you can pass customer parameters param1 and param2 (variables in TDM) 
+Optionally, when registering the action in TDM, you can pass custom parameters param1 and param2 (variables in TDM) 
 and their value will be printed too.
 
 Optionally, you can pass 2 commandline parameters to the `echo.sh` script in the `PUBLISH_ACTION` variable. 
