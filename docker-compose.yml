@@ -2,47 +2,40 @@
 version: '3'
 
 services:
-  database:
-    image: tdm/oracle-gtrep:11.2.0.1
-    shm_size: '3G'
-    hostname: database
-    ports:
-      - '1521:1521'
-  orientdb:
-    image: tdm/orientdb:2.2.33
-    hostname: orientdb
-    environment:
-    # - 'ORIENTDB_ROOT_PASSWORD=marmite'
-      - 'ORIENTDB_ROOT_PASSWORD={cry}tHpzgrvNhtVu6uHGNd9EdlAuwMR30OL0sAXhBWdgM3Md'
-  tdmweb:
-    image: tdm/tdmweb:4.7.0.0-SNAPSHOT
-    hostname: tdmweb
-    environment:
-      - 'GTREP_HOST=database'
-      - 'GTREP_SERVICE_NAME=orcl'
-      - 'GTREP_PASSWORD={cry}TeKApwsP8eL4jxvTsdXItmkveJMsKfR4ezgrK3hvC1yNE3Qq'
-     # - 'ORIENTDB_PASSWORD=marmite'
-      - 'ORIENTDB_PASSWORD={cry}tHpzgrvNhtVu6uHGNd9EdlAuwMR30OL0sAXhBWdgM3Md'
-      - 'TDM_LICENSE=Fstj1CfLNRr8uCcKqtlvrc73w51+BJYJmi+yRBkwbf0l2utEJ60sXEWJkLM493oA6NPlS3HBZhgXGADeh7X1XbyF21hUFJXhkcEOMDwN09bq2x2qmZMl81CeZdeBhcMZWnXQ--vD+z-XD-3cX6ap1Vs219SoAauamd0JGTVHtdsiPTIP810G'
-    depends_on:
-      - database
-      - orientdb
-      - action-echo
-      - action-download
-    ports:
-      - '8080:8080'
-      - '8443:8443'
   action-echo:
-    image: tdm/custom-action-echo:1.0
-    hostname: echo-action
+    image: tdm/action-echo:1.0
+    hostname: action-echo
     environment:
       - 'ACTION_SECRET=123'
     ports:
       - '8543:8443'
   action-download:
-    image: tdm/custom-action-download:1.0
-    hostname: download-action
+    image: tdm/action-download:1.0
+    hostname: action-download
     environment:
       - 'ACTION_SECRET=123'
     ports:
       - '8643:8443'
+  action-db-log:
+    image: tdm/action-db-log:1.0
+    hostname: action-db-log
+    environment:
+      - 'ACTION_SECRET=123'
+    ports:
+      - '8743:8443'
+  action-download-send:
+    image: tdm/action-download-send:1.0
+    hostname: action-download-send
+    environment:
+      - 'ACTION_SECRET=123'
+      - 'smtpHost=novmi05w10a.ca.com'
+      - 'smtpPort=2525'
+    ports:
+      - '8843:8443'
+      
+# Note: assuming that TDM Portal containers run in tdmweb network.
+# If use use a different name, change the network.
+networks:
+  default:
+    external:
+      name: tdmweb
