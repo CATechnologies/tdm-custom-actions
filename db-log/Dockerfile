@@ -13,11 +13,11 @@ COPY tdm/TDMActionService.jar /opt/TDMActionService.jar
 
 RUN keytool -genkeypair -dname cn=tdm -alias jetty -keypass super-secret -storepass secret -keyalg RSA -keysize 2048 -keystore keystore.jks -validity 3650
 
-COPY ["package.json","tsconfig.json","dist/src/*.js","/opt/"]
+COPY ["package.json","tsconfig.json","dist/*.js","/opt/"]
 
 RUN npm install
 
-ENV PUBLISH_ACTION="node /opt/db-action.js"
+ENV PUBLISH_ACTION="node /opt/db-log.js"
 
 #TDM Action Service - REST
 ENTRYPOINT ["java", "-jar", "TDMActionService.jar"]

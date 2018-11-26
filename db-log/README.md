@@ -21,7 +21,7 @@ environment variables.
 
 ## Environment variables which configure the container
 This image inherits from the base TDM image. `PUBLISH_ACTION` is set in the [Dockerfile](Dockerfile) to point to
-`db-action.js` script which is created by TypeScript compiler from [db-action.ts](src/db-action.ts).
+`db-log.js` script which is created by TypeScript compiler from [db-log.ts](src/db-log.ts).
 
 When running the container, you have to define `ACTION_SECRET`.
 
