@@ -26,5 +26,5 @@ curl -k -X POST -H "Authorization: Bearer $token" $tdmUrl/TDMJobService/api/ca/v
 echo "Download done"
 
 echo "Sending data in zip to email address: $recipientEmail"
-swaks -n --to $recipientEmail --from=$senderEmail -p $smtpPort --server $smtpHost --body "$jobTitle and it's ID is $jobId" --header "Subject:Data in zip from TDM" --attach /opt/output.zip
+swaks -n --to $recipientEmail --from=$senderEmail -p $smtpPort --server $smtpHost --body "$jobTitle and it's ID is $jobId" --header "[TDM JOB] Data Generated $jobId - $jobTitle" --attach /opt/output.zip
 echo "==================================================="
