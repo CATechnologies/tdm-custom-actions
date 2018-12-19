@@ -28,7 +28,7 @@ services:
     hostname: action-download-send
     environment:
       - 'ACTION_SECRET=123'
-      - 'smtpHost=novmi05w10a.ca.com'
+      - 'smtpHost=smtphost'
       - 'smtpPort=2525'
     ports:
       - '8843:8443'
