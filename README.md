@@ -7,8 +7,8 @@ To learn more about TDM pre/post publish actions, please visit
 
    * [echo](echo/README.md) - simply echo all parameters, do nothing
    * [download-and-copy](download-and-copy/README.md) - download generated CSV files from TDM and copy to a remote host
-   * [download-and-send-email](download-and-send-email/README.md) - download generated CSV files from TDM send in an e-mail (you can use e.g. [FakeSMTP](http://nilhcem.com/FakeSMTP/)
-to receive e-mails)
+   * [download-and-send-email](download-and-send-email/README.md) - download generated CSV files from TDM and send in an e-mail 
+   (you can use e.g. [FakeSMTP](http://nilhcem.com/FakeSMTP/) to receive e-mails)
    * [db-log](db-log/README.md) - store information about invocations of pre/post build actions in a database table
    
 ## Prerequisites
